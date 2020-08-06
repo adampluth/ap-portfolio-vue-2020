@@ -1,12 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="nav" v-if="!homePage">
+      <app-header/>
     </div>
     <router-view/>
+    <app-footer/>
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import Header from './components/Header'
+import Footer from './components/Footer'
+
+export default {
+  components: {
+    appHeader: Header,
+    appFooter: Footer
+  },
+  computed: {
+    homePage () {
+      if (this.$route.path === '/' || this.$route.path === '/home') {
+        return true
+      } else {
+        return false
+      }
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -15,6 +37,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex!important;
 }
 
 #nav {

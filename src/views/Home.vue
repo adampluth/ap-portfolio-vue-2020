@@ -1,18 +1,32 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container-xl my-auto">
+      <img class="mb-5" alt="Adam Pluth logo" src="../assets/img/AP-logo-2020.png">
+      <app-intro-bar />
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import IntroBar from '@/components/IntroBar.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    'app-intro-bar': IntroBar
   }
 }
 </script>
+
+<style scoped lang="scss">
+.home {
+  display: flex;
+  width: 100%;
+  background: url('../assets/img/AP-portfolio-homepage-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex:2;
+}
+</style>

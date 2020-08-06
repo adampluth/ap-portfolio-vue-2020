@@ -1,0 +1,150 @@
+// File: custom.scss
+
+////////////////////////////////////////////////////////////////////////////////////
+// See more theming optiions at: https://bootstrap-vue.org/docs/reference/theming //
+////////////////////////////////////////////////////////////////////////////////////
+
+// @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+// @font-face {
+//   font-family: 'PlayfairDisplay-Regular';
+//   src: url('~@/assets/fonts/PlayfairDisplay-Regular.ttf');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'PlayfairDisplay-Bold';
+//   src: url('~@/assets/fonts/PlayfairDisplay-Bold.ttf');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+ 
+@font-face {
+  font-family: 'PlayfairDisplay-BoldItalic';
+  src: url('~@/assets/fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf');
+  // src: url('~@/assets/fonts/PlayfairDisplay-BoldItalic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}  
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('~@/assets/fonts/SourceSansPro/SourceSansPro-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}  
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('~@/assets/fonts/SourceSansPro/SourceSansPro-Bold.ttf');
+  font-weight: bold;
+  font-style: normal; 
+}  
+
+// Define your variable overrides here
+// $enable-shadows: true;
+// $enable-gradients: true;
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 456px,
+//   md: 789px,
+//   lg: 999px,
+//   xl: 1234px
+// );
+$blue: #0187CB;
+$orange: #ffa500;
+$orangered: #ff4500;
+$pink: #E7857F;
+$pear: #d1e231;
+$white: #fff;
+$primary: $blue;
+$bv-enable-table-stacked: false;
+$font-family-sans-serif: 'SourceSansPro', sans-serif;
+$font-family-header: 'PlayfairDisplay-BoldItalic', serif;
+
+// Include Bootstrap and BootstrapVue SCSS files
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+
+// General style overrides and custom classes
+html, body, #app {
+  height: 100%;
+}
+
+#app {
+  font: 1rem/1.5 $font-family-sans-serif!important;
+  display: flex;
+}
+
+#nav {
+  padding: 0 0 25px 0 !important;
+}
+
+h1 {
+  font: 3rem/1.5 $font-family-header;
+
+  &.white-transparent {
+    color: rgba(255,255,255,.5);
+  }
+}
+
+h2 {
+  font: 2rem/1.4 $font-family-header;
+}
+
+h3 {
+  font: 1.66rem/1.3 $font-family-header;
+}
+
+h4 {
+  font: 1.33rem/1.2 $font-family-header;
+}
+h5 {
+  font: 1rem/1.1 $font-family-header;
+}
+
+@mixin hover() {
+  &:hover { @content; }
+}
+
+.btn-transparent {
+  color: $white;
+  background-color: rgba(255,255,255,.3);
+  border-color: rgba(255,255,255,.7);
+  border-radius: 0;
+
+  &:hover, &:not(:disabled):not(.disabled):active {
+    color: $white;
+    text-decoration: none;
+    background-color: rgba(255,255,255,.0);
+    border-color: rgba(255,255,255,.5);
+  }
+
+  &:focus,
+  &.focus {
+    background-color: rgba(255,255,255,.0);
+    border-color: rgba(255,255,255,.5);
+    color: $white;
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+  }
+}
+
+// .btn-primary:not(:disabled):not(.disabled):active {
+//   background-color: rgba(255,255,255,.3);
+//   color: $white;
+//   border: 1px solid rgba(255,255,255,.7);
+//   border-radius: 0;
+
+//   &:hover, &:focus, &:active, &:click, &:not(:disabled):not(.disabled):active:focus {
+//     background-color: rgba(255,255,255,0);
+//     color: $white;
+//     border: 1px solid rgba(255,255,255,.7);
+//   }
+
+// }
+
+.my-widget {
+  color: var(--danger);
+}
+// ...

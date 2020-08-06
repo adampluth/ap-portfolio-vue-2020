@@ -16,6 +16,7 @@
           :selectedImg="selectedImg"
         />
       </full-page>
+      <!-- <img id="down-arrow" src="/public/img/icons/page-down-arrow.png" alt="down arrow" /> -->
     </div>
   </div>
 </template>

@@ -2,7 +2,7 @@
 
 A **previous version** of my portfolio website, built with **Vue.js**. This project showcases my past work and experiments in frontend development.
 
-## 🚀 Features
+## Features
 - **Built with Vue.js** – A simple and efficient SPA (Single Page Application).
 - **Custom Styling** – Uses Vue's ecosystem for UI design.
 - **Static Hosting Ready** – Can be deployed as a static site.
@@ -15,7 +15,7 @@ A **previous version** of my portfolio website, built with **Vue.js**. This proj
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 /src
  ├── components  # Reusable Vue components
@@ -27,7 +27,7 @@ A **previous version** of my portfolio website, built with **Vue.js**. This proj
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 | Category             | Technology Used    |
 |----------------------|-------------------|
 | **Frontend**        | Vue.js            |
@@ -37,7 +37,7 @@ A **previous version** of my portfolio website, built with **Vue.js**. This proj
 
 ---
 
-## 🔧 Installation & Setup
+## Installation & Setup
 ### 1️⃣ **Clone the Repository**
 ```sh
 git clone https://github.com/adampluth/ap-portfolio-vue-2020.git
@@ -58,7 +58,7 @@ Then visit **`http://localhost:8080`** in your browser.
 
 ---
 
-## 🚀 Deployment
+## Deployment
 This project was designed for static hosting. You can build and deploy with:
 ```sh
 npm run build
@@ -67,11 +67,6 @@ Then upload the **`dist/`** folder to a static hosting provider like **Netlify, 
 
 ---
 
-## 🎯 Future Plans
+## Future Plans
 - **Upgrade Vue.js version** to a modern framework like Nuxt or migrate to Next.js.
 - **Refactor dependencies** to make installation easier.
-
----
-
-## 📜 License
-This project is licensed under the **MIT License**. Feel free to explore and modify it!
